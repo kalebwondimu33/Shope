@@ -5,7 +5,7 @@ import "./navigation.styles.scss";
 import { UserContext } from "../../context/UserContext";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 import CartIcon from "../../components/cart-icon/CartIcon";
-import CartDropDown from "../../cart-dropdown/CartDropDown";
+import CartDropDown from "../../components/cart-dropdown/CartDropDown";
 import { CardDropContext } from "../../context/CardDropContext";
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
