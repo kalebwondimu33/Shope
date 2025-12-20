@@ -4,17 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.scss";
 import App from "./App.jsx";
 import { UserProvider } from "./context/UserContext.jsx";
-import { ProductsProvider } from "./context/ProductContext.jsx";
+import { CategoriesProvider } from "./context/CategoriesContext.jsx";
 import { CardDropProvider } from "./context/CardDropContext.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <ProductsProvider>
+        <CategoriesProvider>
           <CardDropProvider>
             <App />
           </CardDropProvider>
-        </ProductsProvider>
+        </CategoriesProvider>
       </UserProvider>
     </BrowserRouter>
   </StrictMode>
